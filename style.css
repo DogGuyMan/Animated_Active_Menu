@@ -1,0 +1,78 @@
+body {
+    margin : 0;
+    padding : 0;
+    background-color: #ffeb3b;
+    font-family: sans-serif;
+}
+
+ul {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #000;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333;
+    padding: 0;
+}
+
+ul li{
+    list-style-type:none;
+    width: 150px;
+}
+
+ul li.active{
+    background-color: #FFF;
+}
+ul li.active a{
+    color : #262622;
+}
+
+ul li a{
+    border: 1px solid #FFF;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color : #fff;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.slide {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color : #FFF;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+ul li:nth-child(1).active ~ .slide{
+    left: 0;
+}
+ul li:nth-child(2).active ~ .slide{
+    left: calc(150px * 1);
+}
+ul li:nth-child(3).active ~ .slide{
+    left: calc(150px * 2);
+}
+ul li:nth-child(4).active ~ .slide{
+    left: calc(150px * 3);
+}
+ul li:nth-child(5).active ~ .slide{
+    left: calc(150px * 4);
+}
+/*
+.content {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
