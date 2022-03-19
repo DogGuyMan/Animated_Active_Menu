@@ -10,25 +10,22 @@
 </head>
 
 <body>
+    <audio autoplay="true">
+        <source src="../Animated_Active_Menu/Audio/Antibirth_OST_Esc.mp3">
+    </audio>
     <div class="content">
-        <ul>
-            <li class="active"><a href="#">Link1</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link3</a></li>
-            <li><a href="#">Link4</a></li>
-            <li><a href="#">Link5</a></li>
+        <p>레트로한 메뉴입니다</p>
+        <ul class="li-content">
+            <li class="menu"><a href="#">Who am I?</a></li>
+            <li class="menu"><a href="#">Skills</a></li>
+            <li class="menu"><a href="#">What I do?</a></li>
+            <li class="menu"><a href="#">Projects</a></li>
+            <li class="menu"><a href="#">Blog</a></li>
             <li class="slide"></li>
         </ul>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('li').on('click', function(){
-                $(this).siblings().removeClass('active');
-                $(this).addClass('active');
-            })
-        });
-    </script>
+    <script defer src="app.js"></script>
 </body>
 
 </html>
+<!--https://www.youtube.com/watch?v=9XnqDSabFjM-->

@@ -1,78 +1,83 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin : 0;
     padding : 0;
     background-color: #ffeb3b;
-    font-family: sans-serif;
+    font-family: DungGeunMo;
 }
 
-ul {
-    position: absolute;
-    top : 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    background-color: #000;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 0 0 5px #333;
-    padding: 0;
-}
-
-ul li{
-    list-style-type:none;
-    width: 150px;
-}
-
-ul li.active{
-    background-color: #FFF;
-}
-ul li.active a{
-    color : #262622;
-}
-
-ul li a{
-    border: 1px solid #FFF;
-    display: block;
-    padding: 20px;
-    text-align: center;
-    color : #fff;
-    transition: 0.5s;
-    text-decoration: none;
-}
-
-.slide {
-    position: absolute;
-    width: 150px;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color : #FFF;
-    z-index: -1;
-    transition: 0.5s;
-    opacity: 1;
-}
-
-ul li:nth-child(1).active ~ .slide{
-    left: 0;
-}
-ul li:nth-child(2).active ~ .slide{
-    left: calc(150px * 1);
-}
-ul li:nth-child(3).active ~ .slide{
-    left: calc(150px * 2);
-}
-ul li:nth-child(4).active ~ .slide{
-    left: calc(150px * 3);
-}
-ul li:nth-child(5).active ~ .slide{
-    left: calc(150px * 4);
-}
-/*
 .content {
-    margin: 0 auto;
-    height: 100vh;
+    position: relative;
     display: flex;
+    height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-*/
+
+p{
+    font-size:5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.li-content {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    background-color: #000;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px #333;
+    border-radius: 30px;
+    width : 60%;
+    height: 50px;
+    padding: 0;
+}
+
+ul > li{
+    list-style-type:none;
+    display: flex;
+    
+    overflow-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    border-left: 1px solid #FFF;
+}
+ul > li.menu:first-child{
+    border-left: none;
+}
+
+ul > li > a{
+    display: block;
+    color : #fff;
+    transition: 0.5s;
+    font-size: 1.25rem;
+    text-decoration: double;
+    z-index: 1;
+}
+
+ul > li.slide {
+    border-left: none;
+    position : absolute;
+    height: 50px;
+    opacity: 50%;
+    opacity: 0;
+    background-color: #FFF;
+    transition: 0.5s;
+    pointer-events: none;
+} 
+
+ul > li:hover > a {color : #000;}
+ul > li:hover ~li.slide{opacity: 1;}
