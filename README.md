@@ -28,6 +28,9 @@ https://close-up.tistory.com/entry/input-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-cs
 ---
 
 ## 리펙토링 결과
+
+https://user-images.githubusercontent.com/61660260/159112671-47ff3628-9443-4288-a724-4d3190b357e1.mp4
+
 * #### 1. 굳이 Jquary를 써야하나?
   * 어... 해보니 Jquary 쓰는게 좋았다 *깔끔하네? 잘 응용하면 좋겠다고 생각*.
   * 어쩌다 TS/JS로 떼웠지만 **만족스러운 결과**를 얻었다.
