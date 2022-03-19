@@ -27,6 +27,32 @@ p{
     margin: 0;
     margin-bottom: 20px;
 }
+p.ani {
+    animation-name: bouncing;
+    animation-direction: normal;
+    animation-iteration-count : infinite;
+    animation-duration:2s;
+}
+@keyframes bouncing {
+    0%, 25%, 50%, 75%{
+        font-size: 5rem;
+        color : #FFF;
+    }
+    12.5%, 37.5%, 62.5%, 87.5%{
+        font-size: 6rem;
+        color : #000;
+    }
+    0%, 50%{
+        transform:rotate(0deg)
+    }
+    25%{
+        transform:rotate(-10deg)
+    }
+    75%{
+        transform:rotate(10deg)
+    }
+}
+
 
 .li-content {
     position: relative;

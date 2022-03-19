@@ -7,8 +7,19 @@ var ulStyle = window.getComputedStyle(ulElement);
 var listElementArray = document.querySelectorAll("ul li.menu");
 var audioElement = document.querySelector("audio");
 var slideElement = document.querySelector("ul > li.slide");
+var pElement = document.querySelector("p");
+var togglePlay = true;
 window.addEventListener('click', function () {
-    audioElement === null || audioElement === void 0 ? void 0 : audioElement.play();
+    togglePlay = togglePlay ? false : true;
+    if (togglePlay == true) {
+        audioElement === null || audioElement === void 0 ? void 0 : audioElement.pause();
+    }
+    else {
+        audioElement === null || audioElement === void 0 ? void 0 : audioElement.play();
+    }
+    if (pElement != null) {
+        pElement.classList.toggle("ani");
+    }
 });
 if (slideElement != null) {
     slideElement.style.width = "calc(100% / ".concat(listElementArray.length, ")");

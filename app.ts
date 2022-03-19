@@ -7,9 +7,14 @@ const ulStyle = window.getComputedStyle(ulElement);
 const listElementArray = document.querySelectorAll<HTMLElement>("ul li.menu");
 const audioElement = document.querySelector("audio");
 const slideElement = document.querySelector<HTMLElement>("ul > li.slide");
+const pElement = document.querySelector<HTMLElement>("p");
 
 window.addEventListener('click', ()=>{
-    audioElement?.play();
+    if(audioElement != null){
+        if (audioElement.paused) {audioElement.play();}
+        else {audioElement.pause();}
+        pElement?.classList.toggle("ani");
+    }
 })
 
 if(slideElement != null){
