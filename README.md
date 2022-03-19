@@ -58,3 +58,9 @@ https://user-images.githubusercontent.com/61660260/159112671-47ff3628-9443-4288-
     * 정확히 애니매이션의 이벤트 타겟은 이산적인 위치에 있는 li태그다.
     * 이산적이라는것은 즉, 슉~슉 자연스럽게 지나가는 애니매이션을 적용하기에는 어려운점이 있다
     * 그래서 position:absolute로 li태그 위치에 신경쓰지 않고 미끄러지게 음직이는 또다른 요소가 필요했다...
+
+## BGM 출처
+
+### The Binding of Isaac: Antibirth OST Esc (Arcade)
+
+[![Video Label](https://img.youtube.com/vi/E-4Nk466iIo/maxresdefault.jpg)](https://www.youtube.com/watch?v=E-4Nk466iIo)
