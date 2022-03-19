@@ -15,7 +15,7 @@ https://close-up.tistory.com/entry/input-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-cs
 ```
 
 ## 깃허브 페이지 빌드 링크
-* https://dogguyman.github.io/Animated_Active_Menu/index.html/
+* https://dogguyman.github.io/Animated_Active_Menu/
 
 
 <img src="https://media.giphy.com/media/IyZsLpsVhvHCmIDZ7i/giphy.gif" width=100%>
