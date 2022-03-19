@@ -1,5 +1,6 @@
 # Animated_Active_Menu
-<img src="https://media.giphy.com/media/IyZsLpsVhvHCmIDZ7i/giphy.gif" width=100%>
+
+https://user-images.githubusercontent.com/61660260/159114024-f4a6ae1d-8929-428b-af8e-cdb38ae7c209.mp4
 
 ## 개요
 * OnlineTutorial 유튜브를 보고 구현함
@@ -16,6 +17,8 @@ https://close-up.tistory.com/entry/input-%EC%9E%90%EB%8F%99%EC%99%84%EC%84%B1-cs
 ## 깃허브 페이지 빌드 링크
 * https://dogguyman.github.io/Animated_Active_Menu/index.html/
 
+
+<img src="https://media.giphy.com/media/IyZsLpsVhvHCmIDZ7i/giphy.gif" width=100%>
 
 ## ...그런데 리펙토링 하고싶은데?
 
